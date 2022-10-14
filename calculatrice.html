@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Calculatrice</title>
         <script>
             function show() {
                 //document.getElementById("1").id
@@ -9,7 +11,13 @@
            function compute() {
             document.getElementById("res").value=eval(document.getElementById("res").value);
          }
+       function clear(){
+        document.getElementById("res").value= document.getElementById("c").value=" ";
+			//document.getElementById("res").value = document.getElementById("c").value;
+			     
+			}
             </script>
+            <h3 style="text-align:center;" >Calculatrice</h3>
     </head>
 <body>
 
@@ -18,6 +26,13 @@
         <td colspan="4">
             <input type="text" id="res" >
 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button   onclick="clear()"  > C
+                
+            </button>
         </td>
     </tr>
     <tr>
@@ -77,6 +92,7 @@
         </td>    
     </tr>
 </table>
+
 
 
 
